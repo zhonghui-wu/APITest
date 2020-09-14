@@ -328,9 +328,9 @@ function showOutput(id, name) {
 <div class='heading'>
 <h1>xx项目测试报告</h1>
 <p class='attribute'><strong>测试人员:</strong> 此处填写作者</p>
-<p class='attribute'><strong>开始时间:</strong> 2020-09-04 17:20:01</p>
-<p class='attribute'><strong>合计耗时:</strong> 0:00:00.050337</p>
-<p class='attribute'><strong>测试结果:</strong> 通过 5</p>
+<p class='attribute'><strong>开始时间:</strong> 2020-09-14 16:47:51</p>
+<p class='attribute'><strong>合计耗时:</strong> 0:00:00.306808</p>
+<p class='attribute'><strong>测试结果:</strong> 通过 44 失败 1</p>
 
 <p class='description'>用例执行结果详情</p>
 </div>
@@ -340,18 +340,18 @@ function showOutput(id, name) {
 <p id='show_detail_line'>
 
 
-<button class="btn btn-primary" onclick="#" type="button" >概要(100.0%)</button>
+<button class="btn btn-primary" onclick="#" type="button" >概要(97.78%)</button>
 
-<button class="btn btn-success" onclick="showCase(0)" type="button" >通过(5)</button>
+<button class="btn btn-success" onclick="showCase(0)" type="button" >通过(44)</button>
 
-<button class="btn btn-danger" onclick="showCase(1)" type="button" >失败(0)</button>
+<button class="btn btn-danger" onclick="showCase(1)" type="button" >失败(1)</button>
 
-<button class="btn btn-primary2" onclick="showCase(2)" type="button" >所有(5)</button>
+<button class="btn btn-primary2" onclick="showCase(2)" type="button" >所有(45)</button>
 
 <!--
-<a href='javascript:showCase(0)'>通过(5)</a>
-<a href='javascript:showCase(1)'>失败(0)</a>
-<a href='javascript:showCase(2)'>所有(5)</a>
+<a href='javascript:showCase(0)'>通过(44)</a>
+<a href='javascript:showCase(1)'>失败(1)</a>
+<a href='javascript:showCase(2)'>所有(45)</a>
 
 -->
 </p>
@@ -373,24 +373,24 @@ function showOutput(id, name) {
     <td>详细</td>
 </tr>
 
-<tr class='passClass'>
-    <td>demo_unittest.DemoUnittest</td>
-    <td>3</td>
-    <td>3</td>
-    <td>0</td>
+<tr class='failClass'>
+    <td>demo_ddt2.DemoDDT</td>
+    <td>45</td>
+    <td>44</td>
+    <td>1</td>
     <td>0</td>
     <td>
      <!--
-        <button onclick="showClassDetail('c1',3)" class="btn btn-success" type="button" 
+        <button onclick="showClassDetail('c1',45)" class="btn btn-success" type="button" 
             >收起</button>
        -->
-        <a href="javascript:showClassDetail('c1',3)">&nbsp;&nbsp;收起</a>
+        <a href="javascript:showClassDetail('c1',45)">&nbsp;&nbsp;收起</a>
         
     </td>
 </tr>
 
 <tr id='pt1.1' class='hiddenRow'>
-    <td class='none'><div class='testcase'>test001</div></td>
+    <td class='none'><div class='testcase'>test_001_01___10001____增加课程____所有字段正常填写____正确_返回成功____add______n___name___大学英语___n___desc___大学英语课程___n___display_idx___4__n__n______code__0___________</div></td>
     <td colspan='5' align='center'>
 
     <!-- css div popup start -->
@@ -408,9 +408,7 @@ function showOutput(id, name) {
         </div>
         <pre>
         
-pt1.1: setup调用了，初始化了
-1
-teardown调用了，环境清除了
+pt1.1: 10001测试成功
 
 
         </pre>
@@ -421,7 +419,7 @@ teardown调用了，环境清除了
 </tr>
 
 <tr id='pt1.2' class='hiddenRow'>
-    <td class='none'><div class='testcase'>test003</div></td>
+    <td class='none'><div class='testcase'>test_001_02___10002____增加课程____填写内容和上一条一样____错误_课程名已存在____add______n___name___大学英语___n___desc___大学英语课程___n___display_idx___4__n__n______code__2___________</div></td>
     <td colspan='5' align='center'>
 
     <!-- css div popup start -->
@@ -439,9 +437,7 @@ teardown调用了，环境清除了
         </div>
         <pre>
         
-pt1.2: setup调用了，初始化了
-3
-teardown调用了，环境清除了
+pt1.2: 10002测试成功
 
 
         </pre>
@@ -452,7 +448,7 @@ teardown调用了，环境清除了
 </tr>
 
 <tr id='pt1.3' class='hiddenRow'>
-    <td class='none'><div class='testcase'>test004</div></td>
+    <td class='none'><div class='testcase'>test_001_03___10003____增加课程____不填写课程名_其他正常填写____报错_缺少课程名____add______n___name______n___desc___大学英语课程___n___display_idx___4__n__n______code__2___________</div></td>
     <td colspan='5' align='center'>
 
     <!-- css div popup start -->
@@ -470,9 +466,7 @@ teardown调用了，环境清除了
         </div>
         <pre>
         
-pt1.3: setup调用了，初始化了
-2
-teardown调用了，环境清除了
+pt1.3: 10003测试成功
 
 
         </pre>
@@ -482,45 +476,26 @@ teardown调用了，环境清除了
     </td>
 </tr>
 
-<tr class='passClass'>
-    <td>demo_unittest2.DemoUnittest2</td>
-    <td>2</td>
-    <td>2</td>
-    <td>0</td>
-    <td>0</td>
-    <td>
-     <!--
-        <button onclick="showClassDetail('c2',2)" class="btn btn-success" type="button" 
-            >收起</button>
-       -->
-        <a href="javascript:showClassDetail('c2',2)">&nbsp;&nbsp;收起</a>
-        
-    </td>
-</tr>
-
-<tr id='pt2.1' class='hiddenRow'>
-    <td class='none'><div class='testcase'>test021</div></td>
+<tr id='pt1.4' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_001_04___10004____增加课程____不填写展示次序_其他正常填写____报错_缺少展示次序____add______n___name___大学语文__courseName_____n___desc___大学英语课程___n___display_idx_____n__n______code__2___________</div></td>
     <td colspan='5' align='center'>
 
     <!-- css div popup start -->
     <!--
-    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt2.1')" >
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.4')" >
         通过</a>
     -->
-     <button class="popup_link btn_small btn-primary2" onclick="showTestDetail('div_pt2.1')" 
+     <button class="popup_link btn_small btn-primary2" onclick="showTestDetail('div_pt1.4')" 
         type="button" >通过&bull;</button> 
 
-    <div id='div_pt2.1' class="popup_window">
+    <div id='div_pt1.4' class="popup_window">
         <div style='text-align: right; color:red;cursor:pointer'>
-        <a onfocus='this.blur();' onclick="document.getElementById('div_pt2.1').style.display = 'none' " >
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt1.4').style.display = 'none' " >
            [x]</a>
         </div>
         <pre>
         
-pt2.1: setup调用了，初始化了
-21
-本次共删除了 0 条数据
-teardown调用了，环境清除了
+pt1.4: 10004测试成功
 
 
         </pre>
@@ -530,28 +505,1191 @@ teardown调用了，环境清除了
     </td>
 </tr>
 
-<tr id='pt2.2' class='hiddenRow'>
-    <td class='none'><div class='testcase'>test022</div></td>
+<tr id='pt1.5' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_001_05___10005____增加课程____课程名填写20个汉字_其他正常填写____正确_返回成功____add______n___name___大学英语大学英语大学英语大学英语大学英语___n___desc___大学英语课程___n___display_idx___4__n__n______code__0___________</div></td>
     <td colspan='5' align='center'>
 
     <!-- css div popup start -->
     <!--
-    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt2.2')" >
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.5')" >
         通过</a>
     -->
-     <button class="popup_link btn_small btn-primary2" onclick="showTestDetail('div_pt2.2')" 
+     <button class="popup_link btn_small btn-primary2" onclick="showTestDetail('div_pt1.5')" 
         type="button" >通过&bull;</button> 
 
-    <div id='div_pt2.2' class="popup_window">
+    <div id='div_pt1.5' class="popup_window">
         <div style='text-align: right; color:red;cursor:pointer'>
-        <a onfocus='this.blur();' onclick="document.getElementById('div_pt2.2').style.display = 'none' " >
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt1.5').style.display = 'none' " >
            [x]</a>
         </div>
         <pre>
         
-pt2.2: setup调用了，初始化了
-本次共删除了 1 条数据
-teardown调用了，环境清除了
+pt1.5: 10005测试成功
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='pt1.6' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_001_06___10006____增加课程____课程名填写21个汉字_其他正常填写____报错_课程名长度太长____add______n___name___我大学英语大学英语大学英语大学英语大学英语___n___desc___大学英语课程___n___display_idx___4__n__n______code__2___________</div></td>
+    <td colspan='5' align='center'>
+
+    <!-- css div popup start -->
+    <!--
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.6')" >
+        通过</a>
+    -->
+     <button class="popup_link btn_small btn-primary2" onclick="showTestDetail('div_pt1.6')" 
+        type="button" >通过&bull;</button> 
+
+    <div id='div_pt1.6' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt1.6').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+pt1.6: 10006测试成功
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='pt1.7' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_001_07___10007____增加课程____课程名填写10字以内_其他正常填写____正确_返回成功____add______n___name___大学英语大学英语大学___n___desc___大学英语课程___n___display_idx___4__n__n______code__0___________</div></td>
+    <td colspan='5' align='center'>
+
+    <!-- css div popup start -->
+    <!--
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.7')" >
+        通过</a>
+    -->
+     <button class="popup_link btn_small btn-primary2" onclick="showTestDetail('div_pt1.7')" 
+        type="button" >通过&bull;</button> 
+
+    <div id='div_pt1.7' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt1.7').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+pt1.7: 10007测试成功
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='pt1.8' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_001_08___10008____增加课程____课程名填写1个汉字_其他正常填写____正确_返回成功____add______n___name___大___n___desc___大学英语课程___n___display_idx___4__n__n______code__0___________</div></td>
+    <td colspan='5' align='center'>
+
+    <!-- css div popup start -->
+    <!--
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.8')" >
+        通过</a>
+    -->
+     <button class="popup_link btn_small btn-primary2" onclick="showTestDetail('div_pt1.8')" 
+        type="button" >通过&bull;</button> 
+
+    <div id='div_pt1.8' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt1.8').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+pt1.8: 10008测试成功
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='pt1.9' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_001_09___10009____增加课程____展示次序填写999_其他正常填写____正确_返回成功____add______n___name___大学英语__courseName_____n___desc___大学英语课程___n___display_idx___999__n__n______code__0___________</div></td>
+    <td colspan='5' align='center'>
+
+    <!-- css div popup start -->
+    <!--
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.9')" >
+        通过</a>
+    -->
+     <button class="popup_link btn_small btn-primary2" onclick="showTestDetail('div_pt1.9')" 
+        type="button" >通过&bull;</button> 
+
+    <div id='div_pt1.9' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt1.9').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+pt1.9: 10009测试成功
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='pt1.10' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_001_10___10010____增加课程____展示次序填写1000_其他正常填写____报错_展示次序长度太长____add______n___name___大学英语__courseName_____n___desc___大学英语课程___n___display_idx___1000__n__n______code__2___________</div></td>
+    <td colspan='5' align='center'>
+
+    <!-- css div popup start -->
+    <!--
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.10')" >
+        通过</a>
+    -->
+     <button class="popup_link btn_small btn-primary2" onclick="showTestDetail('div_pt1.10')" 
+        type="button" >通过&bull;</button> 
+
+    <div id='div_pt1.10' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt1.10').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+pt1.10: 10010测试成功
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='pt1.11' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_001_11___10011____增加课程____展示次序填写500_其他正常填写____正确_返回成功____add______n___name___大学英语__courseName_____n___desc___大学英语课程___n___display_idx___500__n__n______code__0___________</div></td>
+    <td colspan='5' align='center'>
+
+    <!-- css div popup start -->
+    <!--
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.11')" >
+        通过</a>
+    -->
+     <button class="popup_link btn_small btn-primary2" onclick="showTestDetail('div_pt1.11')" 
+        type="button" >通过&bull;</button> 
+
+    <div id='div_pt1.11' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt1.11').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+pt1.11: 10011测试成功
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='pt1.12' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_001_12___10012____增加课程____展示次序填写0_其他正常填写____正确_返回成功____add______n___name___大学英语__courseName_____n___desc___大学英语课程___n___display_idx___0__n__n______code__0___________</div></td>
+    <td colspan='5' align='center'>
+
+    <!-- css div popup start -->
+    <!--
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.12')" >
+        通过</a>
+    -->
+     <button class="popup_link btn_small btn-primary2" onclick="showTestDetail('div_pt1.12')" 
+        type="button" >通过&bull;</button> 
+
+    <div id='div_pt1.12' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt1.12').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+pt1.12: 10012测试成功
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='pt1.13' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_001_13___10013____增加课程____展示次序为_1_其他正常填写____报错_展示次序必须为整数____add______n___name___大学英语__courseName_____n___desc___大学英语课程___n___display_idx____1__n__n______code__2___________</div></td>
+    <td colspan='5' align='center'>
+
+    <!-- css div popup start -->
+    <!--
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.13')" >
+        通过</a>
+    -->
+     <button class="popup_link btn_small btn-primary2" onclick="showTestDetail('div_pt1.13')" 
+        type="button" >通过&bull;</button> 
+
+    <div id='div_pt1.13' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt1.13').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+pt1.13: 10013测试成功
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='pt1.14' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_001_14___10014____增加课程____展示次序为33_3_其他正常填写____报错_展示次序必须为整数____add______n___name___大学英语__courseName_____n___desc___大学英语课程___n___display_idx___33_3__n__n______code__2___________</div></td>
+    <td colspan='5' align='center'>
+
+    <!-- css div popup start -->
+    <!--
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.14')" >
+        通过</a>
+    -->
+     <button class="popup_link btn_small btn-primary2" onclick="showTestDetail('div_pt1.14')" 
+        type="button" >通过&bull;</button> 
+
+    <div id='div_pt1.14' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt1.14').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+pt1.14: 10014测试成功
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='pt1.15' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_001_15___10015____增加课程____课程名带有特殊字符__其他正常填写____报错_课程名称不能含特殊字符及标点符号____add______n___name___大学_英语___n___desc___大学英语课程___n___display_idx___4__n__n______code__2___________</div></td>
+    <td colspan='5' align='center'>
+
+    <!-- css div popup start -->
+    <!--
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.15')" >
+        通过</a>
+    -->
+     <button class="popup_link btn_small btn-primary2" onclick="showTestDetail('div_pt1.15')" 
+        type="button" >通过&bull;</button> 
+
+    <div id='div_pt1.15' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt1.15').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+pt1.15: 10015测试成功
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='pt1.16' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_001_16___10016____增加课程____课程名带有特殊字符__其他正常填写____报错_课程名称不能含特殊字符及标点符号____add______n___name___大学_英语___n___desc___大学英语课程___n___display_idx___4__n__n______code__2___________</div></td>
+    <td colspan='5' align='center'>
+
+    <!-- css div popup start -->
+    <!--
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.16')" >
+        通过</a>
+    -->
+     <button class="popup_link btn_small btn-primary2" onclick="showTestDetail('div_pt1.16')" 
+        type="button" >通过&bull;</button> 
+
+    <div id='div_pt1.16' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt1.16').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+pt1.16: 10016测试成功
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='pt1.17' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_001_17___10017____增加课程____课程名带有特殊字符__其他正常填写____报错_课程名称不能含特殊字符及标点符号____add______n___name___大学_英语___n___desc___大学英语课程___n___display_idx___4__n__n______code__2___________</div></td>
+    <td colspan='5' align='center'>
+
+    <!-- css div popup start -->
+    <!--
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.17')" >
+        通过</a>
+    -->
+     <button class="popup_link btn_small btn-primary2" onclick="showTestDetail('div_pt1.17')" 
+        type="button" >通过&bull;</button> 
+
+    <div id='div_pt1.17' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt1.17').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+pt1.17: 10017测试成功
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='pt1.18' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_001_18___10018____增加课程____课程名带有标点符号__其他正常填写____报错_课程名称不能含特殊字符及标点符号____add______n___name___大学_英语___n___desc___大学英语课程___n___display_idx___4__n__n______code__2___________</div></td>
+    <td colspan='5' align='center'>
+
+    <!-- css div popup start -->
+    <!--
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.18')" >
+        通过</a>
+    -->
+     <button class="popup_link btn_small btn-primary2" onclick="showTestDetail('div_pt1.18')" 
+        type="button" >通过&bull;</button> 
+
+    <div id='div_pt1.18' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt1.18').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+pt1.18: 10018测试成功
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='pt1.19' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_001_19___10019____增加课程____课程名带有标点符号__其他正常填写____报错_课程名称不能含特殊字符及标点符号____add______n___name___大学_英语___n___desc___大学英语课程___n___display_idx___4__n__n______code__2___________</div></td>
+    <td colspan='5' align='center'>
+
+    <!-- css div popup start -->
+    <!--
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.19')" >
+        通过</a>
+    -->
+     <button class="popup_link btn_small btn-primary2" onclick="showTestDetail('div_pt1.19')" 
+        type="button" >通过&bull;</button> 
+
+    <div id='div_pt1.19' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt1.19').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+pt1.19: 10019测试成功
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='pt1.20' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_001_20___10020____增加课程____课程名前面有空格_其他正常填写____报错_课程名称不能含特殊字符及标点符号____add______n___name____大学英语___n___desc___大学英语课程___n___display_idx___4__n__n______code__2___________</div></td>
+    <td colspan='5' align='center'>
+
+    <!-- css div popup start -->
+    <!--
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.20')" >
+        通过</a>
+    -->
+     <button class="popup_link btn_small btn-primary2" onclick="showTestDetail('div_pt1.20')" 
+        type="button" >通过&bull;</button> 
+
+    <div id='div_pt1.20' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt1.20').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+pt1.20: 10020测试成功
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='pt1.21' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_001_21___10021____增加课程____课程名后面有空格_其他正常填写____报错_课程名称不能含特殊字符及标点符号____add______n___name___大学英语____n___desc___大学英语课程___n___display_idx___4__n__n______code__2___________</div></td>
+    <td colspan='5' align='center'>
+
+    <!-- css div popup start -->
+    <!--
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.21')" >
+        通过</a>
+    -->
+     <button class="popup_link btn_small btn-primary2" onclick="showTestDetail('div_pt1.21')" 
+        type="button" >通过&bull;</button> 
+
+    <div id='div_pt1.21' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt1.21').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+pt1.21: 10021测试成功
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='pt1.22' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_001_22___10022____增加课程____课程名中间有空格_其他正常填写____报错_课程名称不能含特殊字符及标点符号____add______n___name___大学_英语___n___desc___大学英语课程___n___display_idx___4__n__n______code__2___________</div></td>
+    <td colspan='5' align='center'>
+
+    <!-- css div popup start -->
+    <!--
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.22')" >
+        通过</a>
+    -->
+     <button class="popup_link btn_small btn-primary2" onclick="showTestDetail('div_pt1.22')" 
+        type="button" >通过&bull;</button> 
+
+    <div id='div_pt1.22' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt1.22').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+pt1.22: 10022测试成功
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='pt1.23' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_001_23___10023____增加课程____展示次序填字母_其他正常填写____报错_展示次序必须为数字____add______n___name___大学英语___n___desc___大学英语课程___n___display_idx___ab__n__n______code__2___________</div></td>
+    <td colspan='5' align='center'>
+
+    <!-- css div popup start -->
+    <!--
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.23')" >
+        通过</a>
+    -->
+     <button class="popup_link btn_small btn-primary2" onclick="showTestDetail('div_pt1.23')" 
+        type="button" >通过&bull;</button> 
+
+    <div id='div_pt1.23' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt1.23').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+pt1.23: 10023测试成功
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='pt1.24' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_001_24___10024____增加课程____展示次序填字母_数字_其他正常填写____报错_展示次序必须为数字____add______n___name___大学英语___n___desc___大学英语课程___n___display_idx___a4__n__n______code__2___________</div></td>
+    <td colspan='5' align='center'>
+
+    <!-- css div popup start -->
+    <!--
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.24')" >
+        通过</a>
+    -->
+     <button class="popup_link btn_small btn-primary2" onclick="showTestDetail('div_pt1.24')" 
+        type="button" >通过&bull;</button> 
+
+    <div id='div_pt1.24' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt1.24').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+pt1.24: 10024测试成功
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='pt1.25' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_001_25___10025____增加课程____展示次序填标点符号逗号_其他正常填写____报错_展示次序必须为数字____add______n___name___大学英语___n___desc___大学英语课程___n___display_idx______n__n______code__2___________</div></td>
+    <td colspan='5' align='center'>
+
+    <!-- css div popup start -->
+    <!--
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.25')" >
+        通过</a>
+    -->
+     <button class="popup_link btn_small btn-primary2" onclick="showTestDetail('div_pt1.25')" 
+        type="button" >通过&bull;</button> 
+
+    <div id='div_pt1.25' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt1.25').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+pt1.25: 10025测试成功
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='pt1.26' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_001_26___10026____删除课程____删除的课程ID为空____报错_课程Id不合法或不存在____delete______id___________code__2___________</div></td>
+    <td colspan='5' align='center'>
+
+    <!-- css div popup start -->
+    <!--
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.26')" >
+        通过</a>
+    -->
+     <button class="popup_link btn_small btn-primary2" onclick="showTestDetail('div_pt1.26')" 
+        type="button" >通过&bull;</button> 
+
+    <div id='div_pt1.26' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt1.26').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+pt1.26: 10026测试成功
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='pt1.27' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_001_27___10027____删除课程____删除的课程ID为空格____报错_课程Id不合法或不存在____delete______id____________code__2___________</div></td>
+    <td colspan='5' align='center'>
+
+    <!-- css div popup start -->
+    <!--
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.27')" >
+        通过</a>
+    -->
+     <button class="popup_link btn_small btn-primary2" onclick="showTestDetail('div_pt1.27')" 
+        type="button" >通过&bull;</button> 
+
+    <div id='div_pt1.27' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt1.27').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+pt1.27: 10027测试成功
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='pt1.28' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_001_28___10028____删除课程____删除的课程ID有特殊字符_____报错_课程Id不合法或不存在____delete______id____________code__2___________</div></td>
+    <td colspan='5' align='center'>
+
+    <!-- css div popup start -->
+    <!--
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.28')" >
+        通过</a>
+    -->
+     <button class="popup_link btn_small btn-primary2" onclick="showTestDetail('div_pt1.28')" 
+        type="button" >通过&bull;</button> 
+
+    <div id='div_pt1.28' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt1.28').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+pt1.28: 10028测试成功
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='pt1.29' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_001_29___10029____删除课程____删除的课程ID有特殊字符_____报错_课程Id不合法或不存在____delete______id____________code__2___________</div></td>
+    <td colspan='5' align='center'>
+
+    <!-- css div popup start -->
+    <!--
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.29')" >
+        通过</a>
+    -->
+     <button class="popup_link btn_small btn-primary2" onclick="showTestDetail('div_pt1.29')" 
+        type="button" >通过&bull;</button> 
+
+    <div id='div_pt1.29' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt1.29').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+pt1.29: 10029测试成功
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='pt1.30' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_001_30___10030____删除课程____删除的课程ID有特殊字符_____报错_课程Id不合法或不存在____delete______id____________code__2___________</div></td>
+    <td colspan='5' align='center'>
+
+    <!-- css div popup start -->
+    <!--
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.30')" >
+        通过</a>
+    -->
+     <button class="popup_link btn_small btn-primary2" onclick="showTestDetail('div_pt1.30')" 
+        type="button" >通过&bull;</button> 
+
+    <div id='div_pt1.30' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt1.30').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+pt1.30: 10030测试成功
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='pt1.31' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_001_31___10031____删除课程____删除的课程ID为中文____报错_课程Id不合法或不存在____delete______id___好________code__2___________</div></td>
+    <td colspan='5' align='center'>
+
+    <!-- css div popup start -->
+    <!--
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.31')" >
+        通过</a>
+    -->
+     <button class="popup_link btn_small btn-primary2" onclick="showTestDetail('div_pt1.31')" 
+        type="button" >通过&bull;</button> 
+
+    <div id='div_pt1.31' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt1.31').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+pt1.31: 10031测试成功
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='pt1.32' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_001_32___10032____删除课程____删除的课程ID为任意数字和字母____报错_课程Id不合法或不存在____delete______id___122abc________code__2___________</div></td>
+    <td colspan='5' align='center'>
+
+    <!-- css div popup start -->
+    <!--
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.32')" >
+        通过</a>
+    -->
+     <button class="popup_link btn_small btn-primary2" onclick="showTestDetail('div_pt1.32')" 
+        type="button" >通过&bull;</button> 
+
+    <div id='div_pt1.32' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt1.32').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+pt1.32: 10032测试成功
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='ft1.33' class='none'>
+    <td class='failCase'><div class='testcase'>test_001_33___10033____删除课程____删除的课程ID为任意数字____报错_课程Id不合法或不存在____delete______id___123321________code__2___________</div></td>
+    <td colspan='5' align='center'>
+
+    <!-- css div popup start -->
+    <!--
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.33')" >
+        失败</a>
+    -->
+     <button class="popup_link btn_small btn-primary2" onclick="showTestDetail('div_ft1.33')" 
+        type="button" >失败&bull;</button> 
+
+    <div id='div_ft1.33' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft1.33').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+ft1.33: Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/ddt.py", line 182, in wrapper
+    return func(self, *args, **kwargs)
+  File "/Users/wuzhonghui/PycharmProjects/APIStudyTest/demo/demo_ddt2.py", line 24, in test_001
+    self.assertEqual(ret['retcode'],column7['code'],have_reason)#断言
+AssertionError: 0 != 2 : 
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='pt1.34' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_001_34___10034____列出课程____页码为1_显示条数为20____正确_返回成功____list______pagenum___1___pagesize___20________code__0___________</div></td>
+    <td colspan='5' align='center'>
+
+    <!-- css div popup start -->
+    <!--
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.34')" >
+        通过</a>
+    -->
+     <button class="popup_link btn_small btn-primary2" onclick="showTestDetail('div_pt1.34')" 
+        type="button" >通过&bull;</button> 
+
+    <div id='div_pt1.34' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt1.34').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+pt1.34: 10034测试成功
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='pt1.35' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_001_35___10035____列出课程____页码为空_显示条数正常填写____报错_页码不能为空____list______pagenum______pagesize___20________code__2___________</div></td>
+    <td colspan='5' align='center'>
+
+    <!-- css div popup start -->
+    <!--
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.35')" >
+        通过</a>
+    -->
+     <button class="popup_link btn_small btn-primary2" onclick="showTestDetail('div_pt1.35')" 
+        type="button" >通过&bull;</button> 
+
+    <div id='div_pt1.35' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt1.35').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+pt1.35: 10035测试成功
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='pt1.36' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_001_36___10036____列出课程____页码为1_显示条数为空____报错_显示条数不能为空____list______pagenum___1___pagesize___________code__2___________</div></td>
+    <td colspan='5' align='center'>
+
+    <!-- css div popup start -->
+    <!--
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.36')" >
+        通过</a>
+    -->
+     <button class="popup_link btn_small btn-primary2" onclick="showTestDetail('div_pt1.36')" 
+        type="button" >通过&bull;</button> 
+
+    <div id='div_pt1.36' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt1.36').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+pt1.36: 10036测试成功
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='pt1.37' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_001_37___10037____列出课程____页码为0_显示条数为20____报错_页码必须大于0____list______pagenum___0___pagesize___20________code__2___________</div></td>
+    <td colspan='5' align='center'>
+
+    <!-- css div popup start -->
+    <!--
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.37')" >
+        通过</a>
+    -->
+     <button class="popup_link btn_small btn-primary2" onclick="showTestDetail('div_pt1.37')" 
+        type="button" >通过&bull;</button> 
+
+    <div id='div_pt1.37' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt1.37').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+pt1.37: 10037测试成功
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='pt1.38' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_001_38___10038____列出课程____页码为_1_显示条数为20____报错_页码必须大于0____list______pagenum____1___pagesize___20________code__2___________</div></td>
+    <td colspan='5' align='center'>
+
+    <!-- css div popup start -->
+    <!--
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.38')" >
+        通过</a>
+    -->
+     <button class="popup_link btn_small btn-primary2" onclick="showTestDetail('div_pt1.38')" 
+        type="button" >通过&bull;</button> 
+
+    <div id='div_pt1.38' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt1.38').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+pt1.38: 10038测试成功
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='pt1.39' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_001_39___10039____列出课程____页码为字母_显示条数为20____报错_页码必须大于0____list______pagenum___a___pagesize___20________code__2___________</div></td>
+    <td colspan='5' align='center'>
+
+    <!-- css div popup start -->
+    <!--
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.39')" >
+        通过</a>
+    -->
+     <button class="popup_link btn_small btn-primary2" onclick="showTestDetail('div_pt1.39')" 
+        type="button" >通过&bull;</button> 
+
+    <div id='div_pt1.39' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt1.39').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+pt1.39: 10039测试成功
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='pt1.40' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_001_40___10040____列出课程____页码为很大的数_显示条数为20____报错_页码超过显示范围____list______pagenum___1000___pagesize___20________code__2___________</div></td>
+    <td colspan='5' align='center'>
+
+    <!-- css div popup start -->
+    <!--
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.40')" >
+        通过</a>
+    -->
+     <button class="popup_link btn_small btn-primary2" onclick="showTestDetail('div_pt1.40')" 
+        type="button" >通过&bull;</button> 
+
+    <div id='div_pt1.40' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt1.40').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+pt1.40: 10040测试成功
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='pt1.41' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_001_41___10041____列出课程____页码为1_显示条数0____报错_显示条数必须大于0____list______pagenum___1___pagesize___0________code__2___________</div></td>
+    <td colspan='5' align='center'>
+
+    <!-- css div popup start -->
+    <!--
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.41')" >
+        通过</a>
+    -->
+     <button class="popup_link btn_small btn-primary2" onclick="showTestDetail('div_pt1.41')" 
+        type="button" >通过&bull;</button> 
+
+    <div id='div_pt1.41' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt1.41').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+pt1.41: 10041测试成功
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='pt1.42' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_001_42___10042____列出课程____页码为1_显示条数1____正确_返回成功____list______pagenum___1___pagesize___1________code__0___________</div></td>
+    <td colspan='5' align='center'>
+
+    <!-- css div popup start -->
+    <!--
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.42')" >
+        通过</a>
+    -->
+     <button class="popup_link btn_small btn-primary2" onclick="showTestDetail('div_pt1.42')" 
+        type="button" >通过&bull;</button> 
+
+    <div id='div_pt1.42' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt1.42').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+pt1.42: 10042测试成功
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='pt1.43' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_001_43___10043____列出课程____页码为1_显示条数500____正确_返回成功____list______pagenum___1___pagesize___500________code__0___________</div></td>
+    <td colspan='5' align='center'>
+
+    <!-- css div popup start -->
+    <!--
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.43')" >
+        通过</a>
+    -->
+     <button class="popup_link btn_small btn-primary2" onclick="showTestDetail('div_pt1.43')" 
+        type="button" >通过&bull;</button> 
+
+    <div id='div_pt1.43' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt1.43').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+pt1.43: 10043测试成功
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='pt1.44' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_001_44___10044____列出课程____页码为1_显示条数1000____正确_返回成功____list______pagenum___1___pagesize___1000________code__0___________</div></td>
+    <td colspan='5' align='center'>
+
+    <!-- css div popup start -->
+    <!--
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.44')" >
+        通过</a>
+    -->
+     <button class="popup_link btn_small btn-primary2" onclick="showTestDetail('div_pt1.44')" 
+        type="button" >通过&bull;</button> 
+
+    <div id='div_pt1.44' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt1.44').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+pt1.44: 10044测试成功
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='pt1.45' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_001_45___10045____列出课程____页码为1_显示条数1001____报错_显示条数必须大于0____list______pagenum___1___pagesize___1001________code__2___________</div></td>
+    <td colspan='5' align='center'>
+
+    <!-- css div popup start -->
+    <!--
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.45')" >
+        通过</a>
+    -->
+     <button class="popup_link btn_small btn-primary2" onclick="showTestDetail('div_pt1.45')" 
+        type="button" >通过&bull;</button> 
+
+    <div id='div_pt1.45' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt1.45').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+pt1.45: 10045测试成功
 
 
         </pre>
@@ -563,9 +1701,9 @@ teardown调用了，环境清除了
 
 <tr id='total_row'>
     <td>共</td>
-    <td>5</td>
-    <td>5</td>
-    <td>0</td>
+    <td>45</td>
+    <td>44</td>
+    <td>1</td>
     <td>0</td>
     <td>&nbsp;</td>
 </tr>

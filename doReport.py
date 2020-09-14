@@ -27,7 +27,7 @@ from ClassicHTMLTestRunner import HTMLTestRunner
 
 #方法三
 
-suite = unittest.defaultTestLoader.discover('other',pattern='demo_unittest*.py')#文件夹中的测试用例的py文件名，*是匹配所有
+suite = unittest.defaultTestLoader.discover('demo',pattern='demo_ddt2*.py')#文件夹中的测试用例的py文件名，*是匹配所有
 
 
 #测试运行器

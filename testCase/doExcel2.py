@@ -16,7 +16,7 @@ def fiveHomework():
         testcodes = json.loads(row[6])
         ret = None
         if row[10] == 'post':
-            newName = str(int(time.time()*100))
+            newName = str(int(time.time()*10000))
             data = row[5].replace('{{courseName}}',newName)
             payloads = {
                 "action": "add_course",
