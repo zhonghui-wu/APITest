@@ -24,3 +24,16 @@ def login(username,password):
 # coo = login("auto", "sdfsdfsdf")
 # # print(coo)
 # print(list(1,10,coo))
+
+'''https接口需要在response里面添加verify = False'''
+# def login(username,password):
+#     header = {"Content-Type":"application/x-www-form-urlencoded"}
+#     payload = {"username":username,"password":password}
+#     response =requests.post(f'{HOST}/api/mgr/loginReq',headers = header,verify = False,data=payload)
+#     try:
+#         return response.cookies['sessionid']
+#     except:
+#         return {'retcode': 777, 'reason': '项目异常'}
+#
+#
+# print(login('auto','sdfsdfsdf'))
